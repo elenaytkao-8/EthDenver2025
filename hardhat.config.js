@@ -1,11 +1,11 @@
-require("@nomicfoundation/hardhat-toolbox");
+require("@nomiclabs/hardhat-waffle");
 require("dotenv").config();
 
 module.exports = {
   solidity: "0.8.0",
   networks: {
-    mumbai: {
-      url: process.env.MUMBAI_RPC_URL,
+    amoy: {
+      url: process.env.AMOY_RPC_URL, // Update this in .env
       accounts: [process.env.PRIVATE_KEY],
     },
   },
