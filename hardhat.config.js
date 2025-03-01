@@ -1,15 +1,10 @@
-require("@nomiclabs/hardhat-waffle");
-require("dotenv").config();
+require("@nomicfoundation/hardhat-toolbox");
 
 module.exports = {
-  solidity: "0.8.0",
+  solidity: "0.8.28",
   networks: {
-    amoy: {
-      url: process.env.AMOY_RPC_URL, // Update this in .env
-      accounts: [process.env.PRIVATE_KEY],
+    hardhat: {
+      chainId: 31337, // Local Hardhat Network
     },
-  },
-  etherscan: {
-    apiKey: process.env.POLYGONSCAN_API_KEY,
   },
 };
