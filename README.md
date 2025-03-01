@@ -1,17 +1,5 @@
 # EthDenver2025
-# scripts to run
 
-npm install --save-dev hardhat
-npx hardhat
+CarbonTradeTrain
 
-npm install ethers dotenv
-
-
-npx hardhat run scripts/deploy.js --network mumbai
-
-
-npx create-react-app carbon-credit-dapp
-cd carbon-credit-dapp
-npm install ethers
-
-npm start
+A decentralized platform for tokenizing, trading, and retiring carbon credits to promote transparency and sustainability.
